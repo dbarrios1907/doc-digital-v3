@@ -26,9 +26,19 @@ export default {
   buildModules: [
     // https://go.nuxtjs.dev/typescript
     '@nuxt/typescript-build',
-    'bootstrap-vue/nuxt',
-    'nuxt-purgecss',
+    // 'bootstrap-vue/nuxt',
+    // With options
+    [
+      '@nuxtjs/vuetify',
+      {
+        /* module options */
+      },
+    ],
   ],
+
+  vuetify: {
+    optionsPath: './vuetify.options.js',
+  },
 
   purgeCSS: {
     paths: [
@@ -41,19 +51,19 @@ export default {
     styleExtensions: ['.css', '.scss'],
   },
 
-  bootstrapVue: {
-    usePretranspiled: true,
-    bootstrapCSS: false, // Or `css: false`
-    bootstrapVueCSS: false, // Or `bvCSS: false`
-    directivePlugins: ['VBScrollspyPlugin'],
-    componentPlugins: [
-      'LinkPlugin',
-      // 'LayoutPlugin',
-      // 'JumbotronPlugin',
-      // 'ImagePlugin',
-      // 'NavbarPlugin',
-    ],
-  },
+  // bootstrapVue: {
+  //   usePretranspiled: true,
+  //   bootstrapCSS: false, // Or `css: false`
+  //   bootstrapVueCSS: false, // Or `bvCSS: false`
+  //   directivePlugins: ['VBScrollspyPlugin'],
+  //   componentPlugins: [
+  //     'LinkPlugin',
+  //     // 'LayoutPlugin',
+  //     // 'JumbotronPlugin',
+  //     // 'ImagePlugin',
+  //     // 'NavbarPlugin',
+  //   ],
+  // },
 
   // Modules (https://go.nuxtjs.dev/config-modules)
   modules: [

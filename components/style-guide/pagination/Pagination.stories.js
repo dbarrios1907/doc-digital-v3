@@ -43,7 +43,5 @@ export const PaginationStory = () => ({
         </div>
       </nav>
     </div>
-    
-    
   `,
-});
+})
