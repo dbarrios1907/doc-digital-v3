@@ -41,15 +41,6 @@ export default {
     styleExtensions: ['.css', '.scss'],
   },
 
-  // module: {
-  //   rules: [
-  //     {
-  //       test: /\.s[ac]ss$/i,
-  //       use: ['style-loader', 'css-loader', 'sass-loader'],
-  //     },
-  //   ],
-  // },
-
   bootstrapVue: {
     usePretranspiled: true,
     bootstrapCSS: false, // Or `css: false`
@@ -89,30 +80,30 @@ export default {
         // 'postcss-hexrgba': {},
         // 'postcss-import': {},
         // 'postcss-preset-env': this.preset,
-        '@fullhuman/postcss-purgecss': {
-          content: [
-            './pages/**/*.vue',
-            './layouts/**/*.vue',
-            './components/**/*.vue',
-          ],
-          safelist: ['html', 'body'],
-          // extractors: [
-          //   {
-          //     extractor: (content) =>
-          //       content
-          //         .replace(/<style[\s\S]*>[\s\S]*<\/style>/gi, '')
-          //         .match(/[\w-/:]+/g) || [],
-          //
-          //     extensions: ['vue', 'js', 'ts'],
-          //   },
-          // ],
-        },
+        // '@fullhuman/postcss-purgecss': {
+        //   content: [
+        //     './pages/**/*.vue',
+        //     './layouts/**/*.vue',
+        //     './components/**/*.vue',
+        //   ],
+        //   safelist: ['html', 'body'],
+        // extractors: [
+        //   {
+        //     extractor: (content) =>
+        //       content
+        //         .replace(/<style[\s\S]*>[\s\S]*<\/style>/gi, '')
+        //         .match(/[\w-/:]+/g) || [],
+        //
+        //     extensions: ['vue', 'js', 'ts'],
+        //   },
+        // ],
+        // },
         // cssnano: { preset: 'default' }, // disabled in dev mode
       },
       // order: 'presetEnvAndCssnanoLast',
       preset: {
         // Change the postcss-preset-env settings
-        stage: 2,
+        // stage: 2,
         autoprefixer: {
           flexbox: true,
           grid: true,
