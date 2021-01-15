@@ -1,0 +1,10 @@
+<template>
+  <div>
+    <div class="my-3">
+      <button class="btn btn-primary btn-default-size" type="button">Visitas a La Moneda</button>
+    </div>
+    <div class="my-3">
+      <button class="btn btn-neutral btn-default-size" type="button">Visitas a La Moneda</button>
+    </div>
+  </div>
+</template>

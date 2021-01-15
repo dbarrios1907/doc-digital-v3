@@ -1,0 +1,20 @@
+<template>
+  <section class="section">
+    <div class="section-header mt-3">
+      <h2 class="pb-2 border-bottom border-accent" id="secciones">
+        Ejemplo de título de la sección
+      </h2>
+    </div>
+    <div class="section-body">
+      <p>Este sería el contenido de la sección</p>
+    </div>
+  </section>
+</template>
+
+<style lang="scss">
+h2 {
+  span {
+    color: red;
+  }
+}
+</style>
